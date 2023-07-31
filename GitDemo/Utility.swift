@@ -6,10 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
-struct Utility {
+extension UIViewController {
     
-    func showAlert(){
+    func showAlert(title: String?, msg: String?){
+        let alertVC = UIAlertController(title: title, message: msg, preferredStyle: .alert)
         
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alertVC.addAction(okAction)
+        
+        present(alertVC, animated: true)
     }
 }
