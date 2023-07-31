@@ -21,6 +21,6 @@ extension UIViewController {
     
     
     func sendNotification(){
-        
+        print("sending notifications!")
     }
 }
