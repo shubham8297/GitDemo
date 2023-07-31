@@ -9,4 +9,7 @@ import Foundation
 
 struct Utility {
     
+    func showAlert(){
+        
+    }
 }
